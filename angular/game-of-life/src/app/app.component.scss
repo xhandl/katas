@@ -1,0 +1,24 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.first-generation-field {
+    width: 400px;
+    font-family: "Courier New", monospace;
+}
+
+.load-btn {
+    margin: 0 0 10px 0;
+    width: 400px;
+}
+
+.calculate-btn {
+    margin: 0 0 30px 0;
+    width: 400px;
+}
+
+.generation {
+    width: 400px;
+}

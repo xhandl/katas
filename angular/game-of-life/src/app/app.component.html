@@ -1,0 +1,26 @@
+<h1>
+    Game of Life
+</h1>
+
+<mat-form-field class="first-generation-field">
+    <mat-label>The first generation</mat-label>
+    <textarea #firstGenerationInput matInput rows="5"
+              placeholder="Enter the first generation">{{ firstGeneration }}</textarea>
+</mat-form-field>
+
+<button mat-raised-button class="load-btn"
+        (click)="onLoadFirstGeneration(firstGenerationInput.value)">
+    Load the first generation
+</button>
+<button mat-raised-button color="primary" class="calculate-btn"
+        [disabled]="!generation().iteration"
+        (click)="onCalculateNextGeneration()">
+    Calculate next generation
+</button>
+
+@if (generation().iteration) {
+    <div class="generation">
+        <div>Generation No. {{ generation().iteration }}:</div>
+        <pre>{{ generation() | printGeneration }}</pre>
+    </div>
+}

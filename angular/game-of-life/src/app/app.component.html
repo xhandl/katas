@@ -19,8 +19,5 @@
 </button>
 
 @if (generation().iteration) {
-    <div class="generation">
-        <div>Generation No. {{ generation().iteration }}:</div>
-        <pre>{{ generation() | printGeneration }}</pre>
-    </div>
+    <app-generation-view [generation]="generation()"/>
 }

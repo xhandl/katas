@@ -6,20 +6,22 @@ import {MatButton} from '@angular/material/button';
 import {Generation} from './models/generation';
 import {GenerationsService} from './services/generations.service';
 import {PrintGenerationPipe} from './pipes/generation.pipes';
+import {GenerationViewComponent} from './generation-view/generation-view.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
-    imports: [RouterOutlet, MatFormField, MatInput, MatButton, MatLabel, PrintGenerationPipe],
+    imports: [RouterOutlet, MatFormField, MatInput, MatButton, MatLabel, PrintGenerationPipe, GenerationViewComponent],
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss'
 })
 export class AppComponent {
 
     firstGeneration = `.......
-.......
-..***..
-.......
+.**....
+.*.....
+....*..
+...**..
 .......`;
 
     generation = signal<Generation>({iteration: 0, cells: []});

@@ -7,6 +7,6 @@ import {Generation} from '../models/generation';
 })
 export class PrintGenerationPipe implements PipeTransform {
     transform(generation: Generation): string {
-        return generation.cells.map(row => row.map(cell => cell ? '❤️' : '🪦').join('')).join('\n');
+        return generation.cells.map(row => row.map(cell => cell ? '❤️' : '☠️').join('')).join('\n');
     }
 }

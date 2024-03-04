@@ -21,7 +21,7 @@ describe('PrintGenerationPipe', () => {
         };
 
         const result = pipe.transform(generation);
-        expect(result).toBe('🪦');
+        expect(result).toBe('☠️');
     });
 
     it('should return correct string - 1x1 true', () => {
@@ -49,7 +49,7 @@ describe('PrintGenerationPipe', () => {
         };
 
         const result = pipe.transform(generation);
-        expect(result).toBe('❤️❤️❤️❤️❤️\n❤️🪦🪦🪦❤️\n❤️🪦❤️🪦❤️\n❤️🪦🪦🪦❤️\n❤️❤️❤️❤️❤️');
+        expect(result).toBe('❤️❤️❤️❤️❤️\n❤️☠️☠️☠️❤️\n❤️☠️❤️☠️❤️\n❤️☠️☠️☠️❤️\n❤️❤️❤️❤️❤️');
     });
 
     it('should return empty string', () => {

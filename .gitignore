@@ -2,3 +2,5 @@
 /csharp/obj
 /csharp/.vs
 /angular/.idea
+node_modules
+.idea
